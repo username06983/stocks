@@ -21,7 +21,7 @@ def nse():
       y = d.strftime("%Y")
       url = "https://www1.nseindia.com/content/historical/EQUITIES/{}/{}/cm{}{}.zip".format(y,m,s,"bhav.csv")
       hdr = {'User Agent : Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36'}
-      r = requests.get(url, headers= hdr, verify = False)
+      r = requests.get(url, headers= hdr)
       if(r.status_code == 200):
          pass
          url1.append(url)
